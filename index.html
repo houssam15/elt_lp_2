@@ -3485,12 +3485,11 @@
                     return str
                 }
                 let allproducts=[
-                    {id:"17",imgSrc:'https://i.ibb.co/86KTKjf/image1.jpg',prix:"التكوين المرغوب فيه"},
-                    {id:"1",imgSrc:'https://i.ibb.co/Ny7zXWV/image2.jpg',prix:"التكوين المرغوب فيه"}, 
-                    {id:"14",imgSrc:'https://i.ibb.co/L5fCss3/image3.jpg',prix:"التكوين المرغوب فيه"},
-                    {id:"4",imgSrc:'https://i.ibb.co/hL10rK7/image4.jpg',prix:"التكوين المرغوب فيه"},
-                    {id:"5",imgSrc:'https://i.ibb.co/nrjx6mK/image5.jpg',prix:"التكوين المرغوب فيه"},
-
+                    {id:"17",imgSrc:'https://i.ibb.co/86KTKjf/image1.jpg',prix:"التكوين المرغوب فيه",product_title:"Animateur QHSE"},
+                    {id:"1",imgSrc:'https://i.ibb.co/Ny7zXWV/image2.jpg',prix:"التكوين المرغوب فيه" ,product_title:"Auditeur SMQ ISO 9001 - 19011"}, 
+                    {id:"14",imgSrc:'https://i.ibb.co/L5fCss3/image3.jpg',prix:"التكوين المرغوب فيه",product_title:"Inspecteur Superviseur HSE"},
+                    {id:"4",imgSrc:'https://i.ibb.co/hL10rK7/image4.jpg',prix:"التكوين المرغوب فيه" ,product_title:"Responsable en management de la qualité"},
+                    {id:"5",imgSrc:'https://i.ibb.co/nrjx6mK/image5.jpg',prix:"التكوين المرغوب فيه" ,product_title:"Responsable en mangement QHSE"},
                 ]
                 // https://i.ibb.co/86KTKjf/image1.jpg
                 // https://i.ibb.co/Ny7zXWV/image2.jpg
@@ -3512,7 +3511,7 @@
              const product = allproducts.find(elm=>elm.id==id)
              document.getElementById("product-price-wafa").setAttribute("src",product.imgSrc)
              replaceText(document.getElementById("product-prix-wafa"),product.prix)
-             document.getElementById("produit-input-wafa").setAttribute("value", `${product.imgSrc}`)
+             document.getElementById("name-input-wafa").setAttribute("value", `${product.product_title}`)
              document.getElementById("PBS-06d86m1632762609007").style.display="block"
              location.href="#PBS-06d86m1632762609007"
 
@@ -3988,14 +3987,20 @@ user-select: none;
                             value="http://wa.me/212' + 0682749503 + '?text=msg'"
                           />
                             
-                          <input
+                          <!-- <input
                             type="text"
                             id="produit-input-wafa"
                             name="formation"
                             style="display: none;"
                             value=""
+                          /> -->
+                          <input
+                            type="text"
+                            id="name-input-wafa"
+                            name="formation"
+                            style="display: none;"
+                            value=""
                           />
-
                         </div>
                       </div>
                     </div>
