@@ -3408,7 +3408,7 @@
             <section class="section single-category">
                 
                             <div>
-                                <h1 style="width: fit-content; margin: 10px auto; font-size: x-large; text-align: center; color:#f79358;font-family: 'Cairo', sans-serif; font-weight: 600; ">
+                                <h1 style="width: fit-content; margin: 10px auto; font-size: x-large; text-align: center; color:#013473;font-family: 'Cairo', sans-serif; font-weight: 900; line-height: 2.5rem; ">
                                     دورات تدريبية تطبيقية يؤطرها خبراء في ميدان الجودة والصحة والسلامة المهنية                              </h1>
                             </div>
                            
@@ -3434,8 +3434,8 @@
             <section style="background-color: #86f58281;" class="section single-category">
                 
                 <div>
-                    <h2 style="color: black; width: fit-content; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center; margin: 10px auto; padding: 10px; font-weight: 900;">
-                        Qualité exceptionnelle à prix abordables
+                    <h2 style="font-size: xx-large; color: #013473; width: fit-content; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center; margin: 10px auto; padding: 10px; font-weight: 900;">
+                        Qualité <strong style="border-bottom:4px solid blue; ">exceptionnelle</strong>  à prix  <strong style="border-bottom:4px solid blue; ">abordables</strong>
                     </h2>
                 </div>
                
@@ -3465,9 +3465,7 @@
                                     
                                     <div class="product-price">
                                       
-                                        <span class="currency-value after">
-                                                        <span style=" color:black; margin-left:5px; font-weight:900;" class="value">${elm.prix } </span>
-                                                </span>
+                                        
                                        
                                         
                                     </div>
@@ -3488,11 +3486,18 @@
                     return str
                 }
                 let allproducts=[
-                    {id:"17",imgSrc:'https://i.ibb.co/9grJtzk/photo1.jpg',prix:"OFFRE DE FIN D'ANNÉE"},
-                    {id:"1",imgSrc:'https://i.ibb.co/gVrrnnM/photo2.jpg',prix:"OFFRE DE FIN D'ANNÉE"}, 
-                    {id:"14",imgSrc:'https://i.ibb.co/7RXJVps/photo3.jpg',prix:"OFFRE DE FIN D'ANNÉE"},
-                    {id:"4",imgSrc:'https://i.ibb.co/SyPz6JK/photo4.jpg',prix:"OFFRE DE FIN D'ANNÉE"},
+                    {id:"17",imgSrc:'https://i.ibb.co/86KTKjf/image1.jpg',prix:"التكوين المرغوب فيه"},
+                    {id:"1",imgSrc:'https://i.ibb.co/Ny7zXWV/image2.jpg',prix:"التكوين المرغوب فيه"}, 
+                    {id:"14",imgSrc:'https://i.ibb.co/L5fCss3/image3.jpg',prix:"التكوين المرغوب فيه"},
+                    {id:"4",imgSrc:'https://i.ibb.co/hL10rK7/image4.jpg',prix:"التكوين المرغوب فيه"},
+                    {id:"5",imgSrc:'https://i.ibb.co/nrjx6mK/image5.jpg',prix:"التكوين المرغوب فيه"},
+
                 ]
+                // https://i.ibb.co/86KTKjf/image1.jpg
+                // https://i.ibb.co/Ny7zXWV/image2.jpg
+                // https://i.ibb.co/L5fCss3/image3.jpg
+                // https://i.ibb.co/hL10rK7/image4.jpg
+                // https://i.ibb.co/nrjx6mK/image5.jpg
                 //bureaux
                 const productGrid1 = document.getElementById("products-grid1")
                 productGrid1.innerHTML=htmlItemsGenerator(allproducts)
@@ -3919,7 +3924,7 @@ user-select: none;
 
               <div id="info-container-wafa" style=" display: flex;  align-items: center;  flex-direction: row; justify-content: space-around; ">
                 <span class="product-price">
-                <span style="font-size: large; color:#f79358;" id="product-prix-wafa" class="value"></span>
+                <span style="font-size: x-large; color:#013473;" id="product-prix-wafa" class="value"></span>
                 </span>
               </div>
                 <div  style="width: fit-content; margin: 0 auto;" class="product-price">
@@ -3950,11 +3955,11 @@ user-select: none;
                         <h2 class="checkout-heading">معلومات الزبون</h2>                   
                               
                         <div class="form-group is-required">
-                          <label class="form-label">الإسم كامل</label>
+                          <label class="form-label">الإسم الكامل</label>
                           <input
                             type="text"
                             name="name"
-                            placeholder="الإسم كامل"
+                            placeholder="الإسم الكامل"
                             id="complete-name"
                             required
                           />
@@ -4001,8 +4006,7 @@ user-select: none;
                         class="button single-submit"
                         id="client-info-id"
                       >
-                        اضغط هنا لتأكيد الطلب
-                      </button>
+                      إضغط لتأكيد التسجيل                      </button>
                     </div>
                   </form>
                 </div>
